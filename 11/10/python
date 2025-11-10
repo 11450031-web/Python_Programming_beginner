@@ -1,0 +1,59 @@
+# 整數範例
+positive_int = 100
+negative_int = -50
+zero = 0
+
+print(f"正整數：{positive_int}")
+print(f"負整數：{negative_int}")
+print(f"零：{zero}")
+
+# Python 3 中整數沒有大小限制
+big_number = 123456789012345678901234567890
+print(f"大整數：{big_number}")
+
+# 浮點數範例
+pi = 3.14159
+temperature = -10.5
+scientific_notation = 2.5e6  # 2.5 × 10^6 = 2500000
+
+print(f"圓周率：{pi}")
+print(f"溫度：{temperature}")
+print(f"科學記號：{scientific_notation}")
+
+# 浮點數精度問題
+result = 0.1 + 0.2
+print(f"0.1 + 0.2 = {result}")  # 可能不是精確的 0.3
+print(f"是否等於 0.3：{result == 0.3}")
+
+# 複數範例
+complex1 = 3 + 4j
+complex2 = complex(2, -1)  # 2 - 1j
+
+print(f"複數1：{complex1}")
+print(f"複數2：{complex2}")
+print(f"實部：{complex1.real}")
+print(f"虛部：{complex1.imag}")
+print(f"共軛複數：{complex1.conjugate()}")
+
+# 數字運算範例
+a = 10
+b = 3
+
+print(f"加法：{a} + {b} = {a + b}")
+print(f"減法：{a} - {b} = {a - b}")
+print(f"乘法：{a} * {b} = {a * b}")
+print(f"除法：{a} / {b} = {a / b}")
+print(f"整數除法：{a} // {b} = {a // b}")
+print(f"餘數：{a} % {b} = {a % b}")
+print(f"次方：{a} ** {b} = {a ** b}")
+
+# 內建數學函數
+import math
+
+number = 16
+print(f"絕對值：abs(-10) = {abs(-10)}")
+print(f"四捨五入：round(3.7) = {round(3.7)}")
+print(f"最大值：max(1, 5, 3) = {max(1, 5, 3)}")
+print(f"最小值：min(1, 5, 3) = {min(1, 5, 3)}")
+print(f"平方根：math.sqrt({number}) = {math.sqrt(number)}")
+print(f"次方：pow(2, 3) = {pow(2, 3)}")
