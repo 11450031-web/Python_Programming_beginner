@@ -1,13 +1,4 @@
-#include <stdio.h>
+a = int(input("請輸入第一個數："))
+b = int(input("請輸入第二個數："))
 
-int main() {
-    int a, b;
-    scanf("%d %d", &a, &b);
-
-    if (a > b)
-        printf("最大值為 %d\n", a);
-    else
-        printf("最大值為 %d\n", b);
-
-    return 0;
-}
+print("最大值為", max(a, b))
