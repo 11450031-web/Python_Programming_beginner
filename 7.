@@ -1,9 +1,2 @@
-#include <stdio.h>
-
-int main() {
-    int x, y;
-    scanf("%d %d", &x, &y);
-
-    printf("最大值為 %d\n", x > y ? x : y);
-    return 0;
-}
+x, y = map(int, input("請輸入兩個整數：").split())
+print("最大值為", x if x > y else y)
