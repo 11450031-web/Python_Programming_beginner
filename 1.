@@ -1,15 +1,11 @@
-#include <stdio.h>
-#define PI 3.14159
+import math
 
-int main() {
-    float r;
-    scanf("%f", &r);
+r = float(input("請輸入圓半徑："))
 
-    if (r >= 0) {
-        printf("面積 = %.2f\n", PI * r * r);
-        printf("周長 = %.2f\n", 2 * PI * r);
-    } else {
-        printf("半徑不能為負數\n");
-    }
-    return 0;
-}
+if r >= 0:
+    area = math.pi * r * r
+    perimeter = 2 * math.pi * r
+    print(f"面積 = {area:.2f}")
+    print(f"周長 = {perimeter:.2f}")
+else:
+    print("半徑不能為負數")
