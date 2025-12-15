@@ -1,0 +1,14 @@
+pos = neg = zero = 0
+
+for i in range(10):
+    num = int(input(f"請輸入第 {i+1} 個整數："))
+    if num > 0:
+        pos += 1
+    elif num < 0:
+        neg += 1
+    else:
+        zero += 1
+
+print("正數個數：", pos)
+print("負數個數：", neg)
+print("零的個數：", zero)
