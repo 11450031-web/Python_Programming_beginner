@@ -1,25 +1,14 @@
-#include <stdio.h>
+year = int(input("請輸入年份："))
+month = int(input("請輸入月份："))
 
-int main() {
-    int year, month;
-    scanf("%d %d", &year, &month);
-
-    switch (month) {
-        case 1: case 3: case 5: case 7:
-        case 8: case 10: case 12:
-            printf("31 天\n");
-            break;
-        case 4: case 6: case 9: case 11:
-            printf("30 天\n");
-            break;
-        case 2:
-            if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)
-                printf("29 天\n");
-            else
-                printf("28 天\n");
-            break;
-        default:
-            printf("月份輸入錯誤\n");
-    }
-    return 0;
-}
+if month in [1, 3, 5, 7, 8, 10, 12]:
+    print("31 天")
+elif month in [4, 6, 9, 11]:
+    print("30 天")
+elif month == 2:
+    if (year % 4 == 0 and year % 100 != 0) or year % 400 == 0:
+        print("29 天")
+    else:
+        print("28 天")
+else:
+    print("月份輸入錯誤")
